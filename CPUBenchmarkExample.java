@@ -17,6 +17,7 @@ public class CPUBenchmarkExample {
             int availableProcessors = osBean.getAvailableProcessors();
             String osArch = osBean.getArch();
             double systemLoadAverage = osBean.getSystemLoadAverage();
+            System.out.println("App version: 1.02 Beta");
             System.out.println("Java Virtual Machine: " + vmName + " " + vmVersion);
             System.out.println("Available Processors: " + availableProcessors);
             System.out.println("Operating System Architecture: " + osArch);
@@ -56,9 +57,12 @@ public class CPUBenchmarkExample {
 
             System.out.println("Comparison with other systems:");
             System.out.println("-------------------------------------------------------------");
+            System.out.println("Amd Ryzen 5 3600 @3.60GHz (12 cores)     - System score: 987");
+            System.out.println("Intel Core i7-12800H @1.80GHz (20 cores) - System score: 971");
+            System.out.println("Intel Core i5-1145G7 @2.60GHz (8 cores)  - System score: 962");
             System.out.println("Intel Core i7-11800H @2.30GHz (16 cores) - System score: 952");
-            System.out.println("Intel Core i5-1145G7 @2.60GHz (8 cores) -  System score: 962");
             System.out.println("Intel Core i7-10710U @1.10GHz (12 cores) - System score: 940");
+            System.out.println("Amd EPYC 7282  @2.80GHz (32 cores)       - System score: 903");
             System.out.println("-------------------------------------------------------------");
             System.out.println();
             System.out.println("Next execution of the benchmark loop ...");
